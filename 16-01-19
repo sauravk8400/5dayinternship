@@ -1,0 +1,10 @@
+from collections import Counter
+sentence = input("input a sentence ")
+split = sentence.split()
+unique = set(split)
+counter = Counter(split)
+
+for key in unique:
+    print("Key {} total = {}".format(key,counter[key]))
+
+
